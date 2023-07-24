@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<main class="container">
+  <div class="container px-4 py-0" id="featured-3"></div>
+    <h2 class="pb-2 border-bottom">Gestión de Pacientes</h2>
+      <div class="container-fluid bg-body-secondary rounded-bottom-3">
+        <div class="container p-3"></div>
+        {% include 'messages.html' %}
+        <form method="POST" action="">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="form-text text-danger">{{ error }}</div>
+        <button class="btn btn-primary btn-sm" type="submit">Registrar paciente</button>
+        </form>
+      </div>
+    </div>
+  </div>  
+</main>
+{% endblock contenido %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block contenido %}
+<title>Lista de Servicios</title>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />
+<main class="container">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1 class="pb-2 border-bottom" style="text-align:center">Lista de Servicios</h1>
+        </div>
+    </div>
+  </div>
+  <table class="w3-table-all">
+    <thead>
+      <tr class="item">
+        <th style="text-align:center" bgcolor="lightblue">Servicio</th>
+        <th style="text-align:center" bgcolor="lightblue">Número de Turnos</th>
+        <th style="text-align:center" bgcolor="lightblue">Disponibilidad</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for servicio in servicios %}
+      <tr>
+        <td style="text-align:center">{{ servicio.servicio_descripcion }}</td>
+        <td style="text-align:center">{{ servicio.servicio_cantidad_cola }}</td>
+        <td style="text-align:center">{{ servicio.servicio_estado }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</main>
+{% endblock contenido %}

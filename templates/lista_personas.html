@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block contenido %}
+<title>Lista de Pacientes</title>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />
+<main class="container">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1 class="pb-2 border-bottom" style="text-align:center">Lista de Pacientes</h1>
+        </div>
+    </div>
+  </div>
+  <table class="w3-table-all">
+    <thead>
+      <tr class="item">
+        <th style="text-align:center" bgcolor="lightblue">Cédula</th>
+        <th style="text-align:center" bgcolor="lightblue">Apellido</th>
+        <th style="text-align:center" bgcolor="lightblue">Nombre</th>
+        <th style="text-align:center" bgcolor="lightblue">Fecha de nacimiento</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for persona in personas %}
+      <tr>
+        <td style="text-align:center">{{ persona.persona_cedula }}</td>
+        <td style="text-align:center">{{ persona.persona_apellido }}</td>
+        <td style="text-align:center">{{ persona.persona_nombre }}</td>
+        <td style="text-align:center">{{ persona.persona_fecha_nacimineto }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</main>
+{% endblock contenido %}

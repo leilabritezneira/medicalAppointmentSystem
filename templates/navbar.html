@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand text-primary" href="{% url 'turnero' %}">Sistema de turnos</a>
+      <button class="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggle-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href=" {% url 'turnero' %}">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'persona' %}">Gestionar Pacientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'servicio' %}">Gestionar Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'turnos' %}">Gestionar Turnos</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-secondary mx-2" aria-current="page" href="{% url 'lista_turnos' %}" target="_blank">Mostrar Turnos</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-secondary mx-2" aria-current="page" href="{% url 'lista_servicios' %}" target="_blank">Mostrar Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-secondary mx-2" aria-current="page" href="{% url 'lista_personas' %}" target="_blank">Mostrar Pacientes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
