@@ -22,6 +22,39 @@
 
 🗒️ _Summary: The medial appontment system serves to organize medial appontment in a health institution, it allows to view all the information of the patients, availability services and delayof them._
 
+**▶️ Running the project :**
+
+1. After cloning the repository : `https://github.com/leilabritezneira/medicalAppointmentSystem.git `.<br>
+
+2. Let's go to the project folder : `cd medicalAppointmentSystem `.<br> 
+
+3. Let's start our virtual environment, which is already created and is called turnero-env : `turnero-env\scripts\activate `.<br>
+
+4. We install our project requirements : `pip install -r requirements.txt `.<br>
+
+5. Create a local database in PostgreSQL. <br>
+
+6. We modify the settings.py file to connect the project to the recently created PostgreSQL database : <br>
+
+```
+'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': '< your database name >',
+        'USER': '< your user name >',
+        'PASSWORD': '< your password >',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+```
+
+7. We make the corresponding migrations of our tables to our database : `python manage.py makemigrations` + `python manage.py migrate `.<br>
+
+8. We collect our static files : `python manage.py collectstatic `.<br>
+
+9. We start our server : `python manage.py runserver `.<br>
+
+10. Let's go to http://127.0.0.1:8000/ to see the interfaces of our application.<br>
+
 <hr>
 <h1> :es: Proyecto Final de Citas Médicas con Python </h1>
 :octocat: En este repositorio encontrarás el Proyecto Final de Sistema Citas Médicas realizado durante el tercer semestre de la Tecnicatura Universitaria en Programación de la Universidad Tecnológica Nacional.
@@ -41,6 +74,39 @@
 <br> 🖥️ Tecnología usada: Python - Django - PostgreSQL
 
 🗒️ _Resumen: El sistema de citas médicas sirve para organizar la citación médica en una institución sanitaria, permite visualizar toda la información de los pacientes, servicios disponibles y demora de los mismos._
+
+**▶️ Puesta en marcha del proyecto :**
+
+1. Luego de clonar el repositorio : `https://github.com/leilabritezneira/medicalAppointmentSystem.git `.<br>
+
+2. Accedemos a la carpeta del proyecto : `cd medicalAppointmentSystem `.<br> 
+
+3. Iniciamos nuestro entorno virtual que ya está creado y se llama turnero-env : `turnero-env\scripts\activate `.<br>
+
+4. Instalamos los requerimientos de nuestro proyecto : `pip install -r requirements.txt `.<br>
+
+5. Creamos una base de datos local en PostgreSQL. <br>
+
+6. Modificamos el archivo settings.py para conectar el proyecto con la base de datos PostgreSQL recién creada : <br>
+
+```
+'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': '< nombre de su base de datos >',
+        'USER': '< su usuario >',
+        'PASSWORD': '< su contraseña >',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+```
+
+7. Realizamos las migraciones correspondientes de nuestras tablas a nuestra base de datos : `python manage.py makemigrations` + `python manage.py migrate `.<br>
+
+8. Recolectamos nuestros archivos estáticos : `python manage.py collectstatic `.<br>
+
+9. Iniciamos nuestro servidor : `python manage.py runserver `.<br>
+
+10. Entramos al http://127.0.0.1:8000/ para poder ver las interfaces de nuestra aplicación.<br>
 
 <hr>
 <h1> :fr: Projet Final de Rendez-vous Médicaux avec Python </h1>
@@ -62,3 +128,35 @@
 
 🗒️ _Résumé: Le système de rendez-vous médicaux est utilisé pour organiser les rendez-vous médicaux dans un établissement de santé. Il permet de visualiser toutes les informations relatives au patient, les services disponibles et leurs délais._
 
+**▶️ Démarrage du projet :**
+
+1. Après avoir cloné le dépôt : `https://github.com/leilabritezneira/medicalAppointmentSystem.git `.<br>
+
+2. Accédons au dossier du projet : `cd medicalAppointmentSystem `.<br> 
+
+3. On démarre notre environnement virtuel qui est déjà créé et qui s'appelle turnero-env : `turnero-env\scripts\activate `.<br>
+
+4. On installe les requis de notre projet : `pip install -r requirements.txt `.<br>
+
+5. On crée une base de données locale dans PostgreSQL. <br>
+
+6. On modifie le fichier settings.py pour connecter le projet à la base de données PostgreSQL récemment créée : <br>
+
+```
+'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': '< nom de votre base de données >',
+        'USER': '< votre utilisateur >',
+        'PASSWORD': '< votre mot de pass >',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+```
+
+7. On effectue les migrations correspondantes de nos tables vers notre base de données. : `python manage.py makemigrations` + `python manage.py migrate `.<br>
+
+8. On recueille nos fichiers statiques : `python manage.py collectstatic `.<br>
+
+9. On démarre notre serveur : `python manage.py runserver `.<br>
+
+10. On se rend sur http://127.0.0.1:8000/ pour voir les interfaces de notre application.<br>
